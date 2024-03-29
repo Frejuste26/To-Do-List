@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <title>SIBM EmpManage| LOGIN</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <h2 class="form-title">Login to SIBM EmpManage</h2>
+    <main class="form-container">
+        <div class="Msg">
+            <% if (locals.flash && locals.flash.error) {%>
+            <span class="alert-error"><%= flash.error %></span>
+            <% } %>
+            <% if (locals.flash && locals.flash.success) {%>
+                <span class="alert-success"><%= flash.success %></span>
+            <% } %>
+        </div>
+        <div class="form-content">
+            <img src="/img/account.png" alt="" class="form-image">
+            <form class="form-inner" action="/login" method="post">
+                <div class="form-row">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" id="username" class="form-input" autocomplete="off">
+                </div>
+                <div class="form-row">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-input" autocomplete="off">
+                </div>
+                <button type="submit" id="submit" class="form-button">Login</button>
+            </form> 
+
+        </div>
+    </main>
+</body>
+</html>
