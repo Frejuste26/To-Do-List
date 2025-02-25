@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30
+    },
+    {
+        "id": 2,
+        "name": "Frejuste Kei",
+        "age": 19
+    },
+    {
+        "id": 3,
+        "name": "Tonton Jacob",
+        "age": 45
+    },
+    {
+        "id": 4,
+        "name": "Raymond Sea",
+        "age": 16
+    },
+    {
+        "id": 5,
+        "name": "Zerbo Mathurin",
+        "age": 35
+    }
+]

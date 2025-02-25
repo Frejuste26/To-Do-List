@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript CRUD Operation</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <script type="module" src="./Assets/js/app.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>CRUD Operations</h1>
+        <div id="input-container">
+            <input type="text" id="name" placeholder="Enter name">
+            <input type="text" id="age" placeholder="Enter age">
+            <button id="addBtn"><i class="fi fi-br-add"></i> Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <div id="update-container">
+            <input type="text" id="updateName" placeholder="Enter name">
+            <input type="text" id="updateAge" placeholder="Enter age">
+            <button id="updateBtn"><i class="fi fi-br-refresh"></i> Update</button>
+            <button id="cancelBtn"><i class="fi fi-br-cross-circle"></i> Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

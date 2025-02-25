@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#input-container {
+    margin-bottom: 20px;
+}
+
+#name, #age, #updateName, #updateAge {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #DCDDE1;
+}
+
+#name:focus, #age:focus, #updateName:focus, #updateAge:focus {
+    border-color: #44BD32;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(139, 233, 102, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(133, 233, 102, 0.6);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #44BD32;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #36952C;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 10px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #DCDDE1;
+}
+
+th {
+    background-color: #44BD32;
+    color: #FFFFFF;
+}
+
+tr:hover {
+    background-color: #F2F2F2;
+}
+
+#update-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 1000;
+    background-color: #718093;
+    padding: 20px 40px;
+}
+
+#updateBtn {
+    background-color: #0097E6;
+}
+
+#cancelBtn {
+    background-color: #E84118;
+}
+
+.editBtn {
+    background-color: #FBC531;
+}
+
+.editBtn:hover{
+    background-color: #e1B12C;
+}
+
+.deleteBtn {
+    background-color: #E84118;
+    margin-left: 30px;
+}
+
+.deleteBtn:hover {
+    background-color: #C23616;
+}
+
+@media screen and (max-width: 600px) {
+    #name, #age, #updateName, #updateAge {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #name, #age, #updateName, #updateAge {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        margin-top: 10px;
+    }
+    
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.success-message {
+    animation: fade-in 1s;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #44BD32;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.error-message {
+    animation: fade-in 1s;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FF5722;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
